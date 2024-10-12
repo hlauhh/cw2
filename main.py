@@ -4,7 +4,7 @@ from transformers import BertTokenizer, BertForSequenceClassification
 import torch
 
 # Alpha Vantage API settings
-alpha_vantage_api_key = 'YOUR_ALPHA_VANTAGE_API_KEY'  # Replace with your Alpha Vantage API key
+alpha_vantage_api_key = 'ALPHA_VANTAGE_API_KEY'  # Replace with your Alpha Vantage API key
 symbol = 'AAPL'  # Example stock symbol, you can change this as needed
 
 # Load FinBERT model
