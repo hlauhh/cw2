@@ -16,7 +16,7 @@ model = BertForSequenceClassification.from_pretrained('yiyanghkust/finbert-tone'
 
 # Fetch news from Alpha Vantage and save raw data as CSV
 def fetch_alpha_vantage_news(symbol):
-    url = f'https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers={symbol}&limit=400&apikey={alpha_vantage_api_key}'
+    url = f'https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers={symbol}&limit=400&sort=LATEST&apikey={alpha_vantage_api_key}'
     try:
         response = requests.get(url)
         data = response.json()
