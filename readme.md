@@ -4,7 +4,7 @@ This project retrieves financial news for a given stock ticker using the **Alpha
 
 ## Features
 
-1. **News Fetching**: The script fetches up to **400 news articles** for a specific stock ticker (e.g., AAPL) using Alpha Vantage's API.
+1. **News Fetching**: The script fetches up to **50 news articles** for a specific stock ticker (e.g., AAPL) using Alpha Vantage's API.
 2. **News Classification**: Each article is classified as either forward-looking or not, based on the article's summary using a **FinBERT** model.
 3. **CSV Output**: The output file contains `time_published`, `title`, and `classification` fields.
 4. **API Fallback**: If the API fails, the script loads news from a local CSV file and continues processing.
